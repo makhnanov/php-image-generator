@@ -1,6 +1,6 @@
 <?php
 
-const FILE = 'SeaBattleHorizontal.png';
+const FILE = 'SeaBattleHorizontal.jpg';
 const WIDTH = 388;
 const HEIGHT = 172;
 const FONT = './TimesNewRoman.ttf';
