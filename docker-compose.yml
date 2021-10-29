@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  image-generator:
+    image: php:8.1.0RC4-fpm-alpine3.14
+    volumes:
+      - .:/var/www/html
