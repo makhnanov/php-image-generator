@@ -15,9 +15,7 @@ ___
 ![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleHorizontal.jpg?raw=true)
 
 ### Шахматы
-- С сайта [Lichess](https://lichess.org)
+- С сайта [Lichess](https://lichess.org) \
 ![Chess](https://github.com/makhnanov/php-image-generator/blob/main/Example/ChessField.png?raw=true)
-
-P.S. Некоторые картинки фигур взяты с сайта 
 
 [Руководство по использованию и содействиею](https://github.com/makhnanov/php-image-generator/blob/main/contributing.md)
