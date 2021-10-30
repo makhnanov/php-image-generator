@@ -6,7 +6,8 @@
 
 const HEIGHT = 470;
 const WIDTH = 240;
-const FONT = './TimesNewRoman.ttf';
+
+const FONT = __DIR__ . '/TimesNewRoman.ttf';
 
 const ROW_PADDING = 20;
 const COLUMN_PADDING = 20;
@@ -134,7 +135,7 @@ fillField(
 );
 
 # Выводим изображение
-imageJpeg($img, 'SeaBattle.jpg', 100);
+imageJpeg($img, __DIR__ . '/SeaBattleVertical.jpg', 100);
 imageDestroy($img);
 
 function drawEmptyField(
@@ -189,7 +190,16 @@ function horizontalText($text, $x, $y, $padding)
     $fontPath = FONT;
     $fontSize = 14;
     foreach (mb_str_split($text) as $char) {
-        imagettftext($imgResource, $fontSize, 0, $x, $y, WHITE, $fontPath, $char);
+        imagettftext(
+            $imgResource,
+            $fontSize,
+            0,
+            $x,
+            $y,
+            WHITE,
+            $fontPath,
+            $char
+        );
         $x += $padding;
     }
 }
@@ -219,8 +229,8 @@ function fillField($data, $startX, $startY, $fieldWidth, $fieldHeight)
                     );
                     imagefilledellipse(
                         $img,
-                        $fieldStartX + $fieldWidth / 2,
-                        $fieldStartY + $fieldHeight / 2,
+                        (int)($fieldStartX + $fieldWidth / 2),
+                        (int)($fieldStartY + $fieldHeight / 2),
                         10,
                         10,
                         BLUE
@@ -235,9 +245,9 @@ function fillField($data, $startX, $startY, $fieldWidth, $fieldHeight)
                     );
                     imageLine(
                         $img,
-                        $fieldStartX + ($fieldWidth / 2),
+                        (int)($fieldStartX + ($fieldWidth / 2)),
                         $fieldStartY + 1,
-                        $fieldStartX + ($fieldWidth / 2),
+                        (int)($fieldStartX + ($fieldWidth / 2)),
                         $fieldStartY + $fieldHeight - 1,
                         BLUE
                     );
@@ -285,8 +295,8 @@ function fillField($data, $startX, $startY, $fieldWidth, $fieldHeight)
                 case TYPE_MISSED:
                     imagefilledellipse(
                         $img,
-                        $fieldStartX + $fieldWidth / 2,
-                        $fieldStartY + $fieldHeight / 2,
+                        (int)($fieldStartX + $fieldWidth / 2),
+                        (int)($fieldStartY + $fieldHeight / 2),
                         6,
                         6,
                         WHITE

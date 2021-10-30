@@ -1,9 +1,9 @@
 <?php
 
-const FILE = 'SeaBattleHorizontal.jpg';
+const FILE = __DIR__ . '/SeaBattleHorizontal.jpg';
 const WIDTH = 388;
 const HEIGHT = 172;
-const FONT = './TimesNewRoman.ttf';
+const FONT = __DIR__ . '/TimesNewRoman.ttf';
 const FONT_SIZE = 8;
 
 const ROW_WIDTH = 160;
@@ -234,8 +234,8 @@ function fillField($data, $startX, $startY, $fieldWidth, $fieldHeight)
                 case MISSED:
                     imagefilledellipse(
                         $img,
-                        $fieldStartX + $fieldWidth / 2,
-                        $fieldStartY + $fieldHeight / 2,
+                        (int)($fieldStartX + $fieldWidth / 2),
+                        (int)($fieldStartY + $fieldHeight / 2),
                         6,
                         6,
                         WHITE

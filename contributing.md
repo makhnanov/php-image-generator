@@ -7,31 +7,32 @@ make up
 ```bash
 make shell
 ```
+
 # Генерация изображений
 ### Вертикальный морской бой
 ```bash
 # Через Makefile
 make vertical-sea-battle
 # Внутри контейнера
-php 
+php SeaBattle/generate_vertical.php
 ```
 ### Горизонтальный морской бой
 ```bash
 # Через Makefile
 make horizontal-sea-battle
 # Внутри контейнера
-php 
+php SeaBattle/generate_horizontal.php
 ```
 ### Шахматы
 ```bash
 # Через Makefile
 make chess-field
 # Внутри контейнера
-php 
+php Chess/generate_chess_field.php
 ```
 
 # Полезное
-### Преобразоване svg в PNG
+### Преобразоване SVG в PNG
 ```bash
 inkscape --export-type=png *.svg
 ```

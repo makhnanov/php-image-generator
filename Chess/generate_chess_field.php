@@ -2,7 +2,7 @@
 
 spl_autoload_register(function ($classname) {
     /** @noinspection PhpIncludeInspection */
-    include __DIR__ . '/chess/' . $classname . '.php';
+    include __DIR__ . '/' . $classname . '.php';
 });
 
 const CELL_HEIGHT = 45;
@@ -42,7 +42,7 @@ for ($row = 0; $row < 8; $row++) {
         /** @var BackedEnum $enumFigure */
         $enumFigure = $field[$row][$col][1];
         $watermark = new Imagick();
-        $watermark->readImage(__DIR__ . '/chess/' . $enumFigure->value);
+        $watermark->readImage(__DIR__ . '/' . $enumFigure->value);
 
         // Draw watermark on the image file with the given coordinates
         $image->compositeImage(
@@ -54,4 +54,4 @@ for ($row = 0; $row < 8; $row++) {
     }
 }
 
-$image->writeImage("image_watermark." . $image->getImageFormat());
+$image->writeImage('ChessField.' . strtolower($image->getImageFormat()));
