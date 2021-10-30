@@ -34,12 +34,12 @@ class Field
     {
         return [
             LichessFigure::b_rook,
-            LichessFigure::b_king,
+            LichessFigure::b_knight,
             LichessFigure::b_bishop,
             LichessFigure::b_king,
             LichessFigure::b_queen,
             LichessFigure::b_bishop,
-            LichessFigure::b_king,
+            LichessFigure::b_knight,
             LichessFigure::b_rook,
         ];
     }

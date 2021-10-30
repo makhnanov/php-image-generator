@@ -1,6 +1,10 @@
 up:
 	docker-compose build && docker-compose up --remove-orphans --force-recreate
-chesss:
-	docker-compose exec image-generator php generate_chess_field.php
 shell:
-	docker-compose exec image-generator sh
+	docker-compose exec php-image-generator bash
+vertical-sea-battle:
+	docker-compose exec php-image-generator /usr/local/bin/php /app/SeaBattle/generate_vertical.php
+horizontal-sea-battle:
+	docker-compose exec php-image-generator /usr/local/bin/php /app/SeaBattle/generate_horizontal.php
+chess-field:
+	docker-compose exec php-image-generator /usr/local/bin/php /app/Chess/generate_chess_field.php
