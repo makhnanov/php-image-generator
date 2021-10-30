@@ -16,7 +16,7 @@ ___
 
 ### Шахматы
 - С сайта [Lichess](https://lichess.org)
-![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/ChessField.jpg?raw=true)
+![Chess](https://github.com/makhnanov/php-image-generator/blob/main/Example/ChessField.png?raw=true)
 
 P.S. Некоторые картинки фигур взяты с сайта 
 
