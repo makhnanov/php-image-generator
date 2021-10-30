@@ -9,13 +9,15 @@ ___
 ___
 ### Морской бой
 - Вертикальный вариант \
-![Sea Battle PHP](https://github.com/makhnanov/sea-battle-php/blob/main/SeaBattleVertical.jpg?raw=true)
+![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleVertical.jpg?raw=true)
 
 - Горизонтальный вариант \
-![Sea Battle PHP](https://github.com/makhnanov/sea-battle-php/blob/main/SeaBattleHorizontal.jpg?raw=true)
+![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleHorizontal.jpg?raw=true)
 
 ### Шахматы
+- С сайта [Lichess](https://lichess.org)
+![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/ChessField.jpg?raw=true)
 
-P.S. Некоторые картинки фигур взяты с сайта https://lichess.org/
+P.S. Некоторые картинки фигур взяты с сайта 
 
 [Руководство по использованию и содействиею](https://github.com/makhnanov/php-image-generator/blob/main/contributing.md)

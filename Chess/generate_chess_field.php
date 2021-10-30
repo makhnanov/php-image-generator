@@ -54,4 +54,4 @@ for ($row = 0; $row < 8; $row++) {
     }
 }
 
-$image->writeImage('ChessField.' . strtolower($image->getImageFormat()));
+$image->writeImage(__DIR__ . '/ChessField.' . strtolower($image->getImageFormat()));
