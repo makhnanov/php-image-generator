@@ -11,6 +11,9 @@ ___
 - Вертикальный вариант \
 ![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleVertical.jpg?raw=true)
 
+- Вертикальный кислотный вариант \
+![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleVerticalAcid.jpg?raw=true)
+
 - Горизонтальный вариант \
 ![Sea Battle PHP](https://github.com/makhnanov/php-image-generator/blob/main/Example/SeaBattleHorizontal.jpg?raw=true)
 

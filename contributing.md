@@ -16,6 +16,11 @@ make vertical-sea-battle
 # Внутри контейнера
 php SeaBattle/generate_vertical.php
 ```
+### Вертикальный кислотный морской бой
+```bash
+# Внутри контейнера
+php SeaBattle/generate_vertical_acid.php
+```
 ### Горизонтальный морской бой
 ```bash
 # Через Makefile
